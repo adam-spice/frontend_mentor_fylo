@@ -1,21 +1,26 @@
 import React from 'react';
 
+import Logo from './assets/images/logo.svg';
+import iconDocument from './assets/images/icon-document.svg';
+import iconFolder from './assets/images/icon-folder.svg';
+import iconUpload from './assets/images/icon-upload.svg';
+
 import './App.css';
 
 function App() {
   return (
     <main>
       <div class='left-col'>
-        <img src='./images/logo.svg' id='logo' alt='logo' />
+        <img src={Logo} id='logo' alt='logo' />
         <div class='icons'>
           <div class='icon-back'>
-            <img src='./images/icon-document.svg' alt='document' class='icon' />
+            <img src={iconDocument} alt='document' class='icon' />
           </div>
           <div class='icon-back'>
-            <img src='./images/icon-folder.svg' alt='folder' class='icon' />
+            <img src={iconFolder} alt='folder' class='icon' />
           </div>
           <div class='icon-back'>
-            <img src='./images/icon-upload.svg' alt='upload' class='icon' />
+            <img src={iconUpload} alt='upload' class='icon' />
           </div>
         </div>
       </div>
